@@ -1,0 +1,43 @@
+.task {
+  border-bottom: 1px solid #f9f9f9;
+  border-radius: 8px;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: var(--box-shadow-lg);
+  &:hover {
+    background-color: #e7e7e7;
+  }
+  .task__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #040404;
+    .title__actions {
+      display: flex;
+      color: #a6aaad;
+      gap: 8px;
+      font-size: 1.125rem;
+      .actions__FaTimes {
+        cursor: pointer;
+        &:hover {
+          color: red;
+        }
+      }
+      .actions__FaPencil {
+        cursor: pointer;
+        &:hover {
+          color: blue;
+        }
+      }
+    }
+  }
+  .task__category {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #7e7e7e;
+    text-transform: capitalize;
+  }
+}
